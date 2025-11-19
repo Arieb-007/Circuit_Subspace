@@ -1,0 +1,59 @@
+Loading test evaluation data from checkpoints:
+- IOI: checkpoints/ioi
+- GT:  checkpoints/gt
+- GP:  checkpoints/gp
+
+============================================================================================================================================
+TEST EVALUATION METRICS: Sparsity vs KL Divergence vs Accuracy vs Exact Match
+All metrics are from test data evaluation (mean ± std)
+============================================================================================================================================
+
+## Final Test Metrics (mean ± std)
+
+| Dataset | Relative Sparsity (%) | Full Sparsity (%) | KL Divergence | Accuracy | Exact Match |
+|---------|----------------------|-------------------|---------------|----------|-------------|
+| IOI     | 91.32 | 98.66 | 0.2127 ± 0.0184 | 0.6977 ± 0.0702 | 0.7738 ± 0.0619 |
+| GT      | 95.21 | 99.26 | 0.2313 ± 0.0258 | 0.0000 ± 0.0000 | 0.3345 ± 0.0607 |
+| GP      | 96.81 | 99.51 | 0.1348 ± 0.0108 | 0.7529 ± 0.0434 | 0.8630 ± 0.0714 |
+
+---
+
+## Detailed Test Metrics
+
+| Dataset | Num Active | Test Loss | Logit Diff | Training Steps |
+|---------|------------|-----------|------------|----------------|
+| IOI     |       3213 | 0.2127 ± 0.0184 | 2.9504 ± 0.2233 |            176 |
+| GT      |       1772 | 0.2313 ± 0.0258 | 0.1160 ± 0.1095 |            480 |
+| GP      |       1182 | 0.1348 ± 0.0108 | 2.4599 ± 0.2484 |            255 |
+
+---
+
+## Comparison at Target Relative Sparsity Levels
+
+Showing which dataset achieves what metrics at similar sparsity levels:
+
+| Relative Sparsity | Dataset | Full Sparsity | KL Div | Accuracy | Exact Match |
+|-------------------|---------|---------------|--------|----------|-------------|
+|             91.32 |     IOI |         98.66 | 0.2127 | 0.6977 | 0.7738 |
+|             95.21 |      GT |         99.26 | 0.2313 | 0.0000 | 0.3345 |
+|             96.81 |      GP |         99.51 | 0.1348 | 0.7529 | 0.8630 |
+
+============================================================================================================================================
+
+**Key Definitions:**
+- **Relative Sparsity**: Percentage of attention head components pruned (out of 37,020 total)
+- **Full Sparsity**: Percentage of all model components pruned (out of 239,772 total, includes MLPs)
+- **KL Divergence**: KL divergence between pruned and original model outputs (lower is better)
+- **Accuracy**: Masked accuracy on the task
+- **Exact Match**: Proportion of exactly correct predictions
+- **Num Active**: Number of active (non-pruned) components
+- **Logit Diff**: Difference in logits between correct and incorrect answers (higher is better)
+
+**Notes:**
+- All metrics are from test set evaluation with standard deviation across multiple evaluation runs
+- GT uses exact match as primary metric (accuracy=0 is expected)
+- IOI data from IOI_20251022_213530 (has test evaluation)
+- GT data from GT_20251023_012757
+- GP data from GP_20251023_012746
+
+============================================================================================================================================

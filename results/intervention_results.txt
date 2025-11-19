@@ -1,0 +1,1155 @@
+2025-11-19 17:28:16.077026: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-11-19 17:28:16.088823: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1763553496.102079 3451545 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1763553496.106132 3451545 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-11-19 17:28:16.121048: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-11-19 17:28:23,305 - INFO - Training masks: {'ov', 'mlp_in', 'qk', 'mlp_out'}
+2025-11-19 17:28:23,310 - INFO - Loading or computing SVD decompositions...
+2025-11-19 17:28:23,310 - INFO - Computing SVD from scratch...
+2025-11-19 17:28:23,311 - INFO - Computing SVD for differential_head_0_0_qk
+2025-11-19 17:28:23,609 - INFO - Saved SVD for layer 0, head 0, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head0_qk.pt
+2025-11-19 17:28:23,609 - INFO - Computing SVD for differential_head_0_0_ov
+2025-11-19 17:28:23,838 - INFO - Saved SVD for layer 0, head 0, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head0_ov.pt
+2025-11-19 17:28:23,838 - INFO - Computing SVD for differential_head_0_1_qk
+2025-11-19 17:28:24,001 - INFO - Saved SVD for layer 0, head 1, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head1_qk.pt
+2025-11-19 17:28:24,001 - INFO - Computing SVD for differential_head_0_1_ov
+2025-11-19 17:28:24,197 - INFO - Saved SVD for layer 0, head 1, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head1_ov.pt
+2025-11-19 17:28:24,197 - INFO - Computing SVD for differential_head_0_2_qk
+2025-11-19 17:28:24,357 - INFO - Saved SVD for layer 0, head 2, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head2_qk.pt
+2025-11-19 17:28:24,357 - INFO - Computing SVD for differential_head_0_2_ov
+2025-11-19 17:28:24,581 - INFO - Saved SVD for layer 0, head 2, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head2_ov.pt
+2025-11-19 17:28:24,581 - INFO - Computing SVD for differential_head_0_3_qk
+2025-11-19 17:28:24,724 - INFO - Saved SVD for layer 0, head 3, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head3_qk.pt
+2025-11-19 17:28:24,724 - INFO - Computing SVD for differential_head_0_3_ov
+2025-11-19 17:28:24,954 - INFO - Saved SVD for layer 0, head 3, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head3_ov.pt
+2025-11-19 17:28:24,954 - INFO - Computing SVD for differential_head_0_4_qk
+2025-11-19 17:28:25,108 - INFO - Saved SVD for layer 0, head 4, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head4_qk.pt
+2025-11-19 17:28:25,108 - INFO - Computing SVD for differential_head_0_4_ov
+2025-11-19 17:28:25,220 - INFO - Saved SVD for layer 0, head 4, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head4_ov.pt
+2025-11-19 17:28:25,220 - INFO - Computing SVD for differential_head_0_5_qk
+2025-11-19 17:28:25,389 - INFO - Saved SVD for layer 0, head 5, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head5_qk.pt
+2025-11-19 17:28:25,389 - INFO - Computing SVD for differential_head_0_5_ov
+2025-11-19 17:28:25,626 - INFO - Saved SVD for layer 0, head 5, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head5_ov.pt
+2025-11-19 17:28:25,626 - INFO - Computing SVD for differential_head_0_6_qk
+2025-11-19 17:28:25,795 - INFO - Saved SVD for layer 0, head 6, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head6_qk.pt
+2025-11-19 17:28:25,795 - INFO - Computing SVD for differential_head_0_6_ov
+2025-11-19 17:28:26,001 - INFO - Saved SVD for layer 0, head 6, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head6_ov.pt
+2025-11-19 17:28:26,001 - INFO - Computing SVD for differential_head_0_7_qk
+2025-11-19 17:28:26,153 - INFO - Saved SVD for layer 0, head 7, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head7_qk.pt
+2025-11-19 17:28:26,153 - INFO - Computing SVD for differential_head_0_7_ov
+2025-11-19 17:28:26,374 - INFO - Saved SVD for layer 0, head 7, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head7_ov.pt
+2025-11-19 17:28:26,374 - INFO - Computing SVD for differential_head_0_8_qk
+2025-11-19 17:28:26,538 - INFO - Saved SVD for layer 0, head 8, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head8_qk.pt
+2025-11-19 17:28:26,538 - INFO - Computing SVD for differential_head_0_8_ov
+2025-11-19 17:28:26,735 - INFO - Saved SVD for layer 0, head 8, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head8_ov.pt
+2025-11-19 17:28:26,735 - INFO - Computing SVD for differential_head_0_9_qk
+2025-11-19 17:28:26,887 - INFO - Saved SVD for layer 0, head 9, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head9_qk.pt
+2025-11-19 17:28:26,887 - INFO - Computing SVD for differential_head_0_9_ov
+2025-11-19 17:28:27,105 - INFO - Saved SVD for layer 0, head 9, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head9_ov.pt
+2025-11-19 17:28:27,105 - INFO - Computing SVD for differential_head_0_10_qk
+2025-11-19 17:28:27,242 - INFO - Saved SVD for layer 0, head 10, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head10_qk.pt
+2025-11-19 17:28:27,243 - INFO - Computing SVD for differential_head_0_10_ov
+2025-11-19 17:28:27,458 - INFO - Saved SVD for layer 0, head 10, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head10_ov.pt
+2025-11-19 17:28:27,458 - INFO - Computing SVD for differential_head_0_11_qk
+2025-11-19 17:28:27,617 - INFO - Saved SVD for layer 0, head 11, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head11_qk.pt
+2025-11-19 17:28:27,617 - INFO - Computing SVD for differential_head_0_11_ov
+2025-11-19 17:28:27,802 - INFO - Saved SVD for layer 0, head 11, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head11_ov.pt
+2025-11-19 17:28:27,802 - INFO - Computing SVD for differential_head_1_0_qk
+2025-11-19 17:28:27,980 - INFO - Saved SVD for layer 1, head 0, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head0_qk.pt
+2025-11-19 17:28:27,980 - INFO - Computing SVD for differential_head_1_0_ov
+2025-11-19 17:28:28,244 - INFO - Saved SVD for layer 1, head 0, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head0_ov.pt
+2025-11-19 17:28:28,244 - INFO - Computing SVD for differential_head_1_1_qk
+2025-11-19 17:28:28,408 - INFO - Saved SVD for layer 1, head 1, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head1_qk.pt
+2025-11-19 17:28:28,408 - INFO - Computing SVD for differential_head_1_1_ov
+2025-11-19 17:28:28,781 - INFO - Saved SVD for layer 1, head 1, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head1_ov.pt
+2025-11-19 17:28:28,781 - INFO - Computing SVD for differential_head_1_2_qk
+2025-11-19 17:28:28,930 - INFO - Saved SVD for layer 1, head 2, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head2_qk.pt
+2025-11-19 17:28:28,930 - INFO - Computing SVD for differential_head_1_2_ov
+2025-11-19 17:28:29,157 - INFO - Saved SVD for layer 1, head 2, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head2_ov.pt
+2025-11-19 17:28:29,157 - INFO - Computing SVD for differential_head_1_3_qk
+2025-11-19 17:28:29,301 - INFO - Saved SVD for layer 1, head 3, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head3_qk.pt
+2025-11-19 17:28:29,301 - INFO - Computing SVD for differential_head_1_3_ov
+2025-11-19 17:28:29,562 - INFO - Saved SVD for layer 1, head 3, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head3_ov.pt
+2025-11-19 17:28:29,562 - INFO - Computing SVD for differential_head_1_4_qk
+2025-11-19 17:28:29,706 - INFO - Saved SVD for layer 1, head 4, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head4_qk.pt
+2025-11-19 17:28:29,706 - INFO - Computing SVD for differential_head_1_4_ov
+2025-11-19 17:28:30,060 - INFO - Saved SVD for layer 1, head 4, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head4_ov.pt
+2025-11-19 17:28:30,060 - INFO - Computing SVD for differential_head_1_5_qk
+2025-11-19 17:28:30,237 - INFO - Saved SVD for layer 1, head 5, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head5_qk.pt
+2025-11-19 17:28:30,237 - INFO - Computing SVD for differential_head_1_5_ov
+2025-11-19 17:28:30,613 - INFO - Saved SVD for layer 1, head 5, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head5_ov.pt
+2025-11-19 17:28:30,613 - INFO - Computing SVD for differential_head_1_6_qk
+2025-11-19 17:28:30,784 - INFO - Saved SVD for layer 1, head 6, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head6_qk.pt
+2025-11-19 17:28:30,784 - INFO - Computing SVD for differential_head_1_6_ov
+2025-11-19 17:28:31,170 - INFO - Saved SVD for layer 1, head 6, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head6_ov.pt
+2025-11-19 17:28:31,170 - INFO - Computing SVD for differential_head_1_7_qk
+2025-11-19 17:28:31,346 - INFO - Saved SVD for layer 1, head 7, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head7_qk.pt
+2025-11-19 17:28:31,346 - INFO - Computing SVD for differential_head_1_7_ov
+2025-11-19 17:28:31,712 - INFO - Saved SVD for layer 1, head 7, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head7_ov.pt
+2025-11-19 17:28:31,712 - INFO - Computing SVD for differential_head_1_8_qk
+2025-11-19 17:28:31,883 - INFO - Saved SVD for layer 1, head 8, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head8_qk.pt
+2025-11-19 17:28:31,884 - INFO - Computing SVD for differential_head_1_8_ov
+2025-11-19 17:28:32,095 - INFO - Saved SVD for layer 1, head 8, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head8_ov.pt
+2025-11-19 17:28:32,095 - INFO - Computing SVD for differential_head_1_9_qk
+2025-11-19 17:28:32,238 - INFO - Saved SVD for layer 1, head 9, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head9_qk.pt
+2025-11-19 17:28:32,238 - INFO - Computing SVD for differential_head_1_9_ov
+2025-11-19 17:28:32,485 - INFO - Saved SVD for layer 1, head 9, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head9_ov.pt
+2025-11-19 17:28:32,485 - INFO - Computing SVD for differential_head_1_10_qk
+2025-11-19 17:28:32,633 - INFO - Saved SVD for layer 1, head 10, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head10_qk.pt
+2025-11-19 17:28:32,633 - INFO - Computing SVD for differential_head_1_10_ov
+2025-11-19 17:28:32,923 - INFO - Saved SVD for layer 1, head 10, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head10_ov.pt
+2025-11-19 17:28:32,923 - INFO - Computing SVD for differential_head_1_11_qk
+2025-11-19 17:28:33,099 - INFO - Saved SVD for layer 1, head 11, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head11_qk.pt
+2025-11-19 17:28:33,099 - INFO - Computing SVD for differential_head_1_11_ov
+2025-11-19 17:28:33,465 - INFO - Saved SVD for layer 1, head 11, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head11_ov.pt
+2025-11-19 17:28:33,465 - INFO - Computing SVD for differential_head_2_0_qk
+2025-11-19 17:28:33,631 - INFO - Saved SVD for layer 2, head 0, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head0_qk.pt
+2025-11-19 17:28:33,631 - INFO - Computing SVD for differential_head_2_0_ov
+2025-11-19 17:28:33,977 - INFO - Saved SVD for layer 2, head 0, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head0_ov.pt
+2025-11-19 17:28:33,977 - INFO - Computing SVD for differential_head_2_1_qk
+2025-11-19 17:28:34,154 - INFO - Saved SVD for layer 2, head 1, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head1_qk.pt
+2025-11-19 17:28:34,154 - INFO - Computing SVD for differential_head_2_1_ov
+2025-11-19 17:28:34,501 - INFO - Saved SVD for layer 2, head 1, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head1_ov.pt
+2025-11-19 17:28:34,502 - INFO - Computing SVD for differential_head_2_2_qk
+2025-11-19 17:28:34,655 - INFO - Saved SVD for layer 2, head 2, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head2_qk.pt
+2025-11-19 17:28:34,655 - INFO - Computing SVD for differential_head_2_2_ov
+2025-11-19 17:28:35,032 - INFO - Saved SVD for layer 2, head 2, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head2_ov.pt
+2025-11-19 17:28:35,032 - INFO - Computing SVD for differential_head_2_3_qk
+2025-11-19 17:28:35,182 - INFO - Saved SVD for layer 2, head 3, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head3_qk.pt
+2025-11-19 17:28:35,182 - INFO - Computing SVD for differential_head_2_3_ov
+2025-11-19 17:28:35,546 - INFO - Saved SVD for layer 2, head 3, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head3_ov.pt
+2025-11-19 17:28:35,546 - INFO - Computing SVD for differential_head_2_4_qk
+2025-11-19 17:28:35,718 - INFO - Saved SVD for layer 2, head 4, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head4_qk.pt
+2025-11-19 17:28:35,718 - INFO - Computing SVD for differential_head_2_4_ov
+2025-11-19 17:28:36,075 - INFO - Saved SVD for layer 2, head 4, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head4_ov.pt
+2025-11-19 17:28:36,075 - INFO - Computing SVD for differential_head_2_5_qk
+2025-11-19 17:28:36,228 - INFO - Saved SVD for layer 2, head 5, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head5_qk.pt
+2025-11-19 17:28:36,228 - INFO - Computing SVD for differential_head_2_5_ov
+2025-11-19 17:28:36,534 - INFO - Saved SVD for layer 2, head 5, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head5_ov.pt
+2025-11-19 17:28:36,534 - INFO - Computing SVD for differential_head_2_6_qk
+2025-11-19 17:28:36,695 - INFO - Saved SVD for layer 2, head 6, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head6_qk.pt
+2025-11-19 17:28:36,695 - INFO - Computing SVD for differential_head_2_6_ov
+2025-11-19 17:28:37,041 - INFO - Saved SVD for layer 2, head 6, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head6_ov.pt
+2025-11-19 17:28:37,041 - INFO - Computing SVD for differential_head_2_7_qk
+2025-11-19 17:28:37,190 - INFO - Saved SVD for layer 2, head 7, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head7_qk.pt
+2025-11-19 17:28:37,190 - INFO - Computing SVD for differential_head_2_7_ov
+2025-11-19 17:28:37,458 - INFO - Saved SVD for layer 2, head 7, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head7_ov.pt
+2025-11-19 17:28:37,458 - INFO - Computing SVD for differential_head_2_8_qk
+2025-11-19 17:28:37,619 - INFO - Saved SVD for layer 2, head 8, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head8_qk.pt
+2025-11-19 17:28:37,619 - INFO - Computing SVD for differential_head_2_8_ov
+2025-11-19 17:28:37,971 - INFO - Saved SVD for layer 2, head 8, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head8_ov.pt
+2025-11-19 17:28:37,971 - INFO - Computing SVD for differential_head_2_9_qk
+2025-11-19 17:28:38,115 - INFO - Saved SVD for layer 2, head 9, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head9_qk.pt
+2025-11-19 17:28:38,115 - INFO - Computing SVD for differential_head_2_9_ov
+2025-11-19 17:28:38,451 - INFO - Saved SVD for layer 2, head 9, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head9_ov.pt
+2025-11-19 17:28:38,451 - INFO - Computing SVD for differential_head_2_10_qk
+2025-11-19 17:28:38,600 - INFO - Saved SVD for layer 2, head 10, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head10_qk.pt
+2025-11-19 17:28:38,600 - INFO - Computing SVD for differential_head_2_10_ov
+2025-11-19 17:28:38,941 - INFO - Saved SVD for layer 2, head 10, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head10_ov.pt
+2025-11-19 17:28:38,941 - INFO - Computing SVD for differential_head_2_11_qk
+2025-11-19 17:28:39,116 - INFO - Saved SVD for layer 2, head 11, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head11_qk.pt
+2025-11-19 17:28:39,116 - INFO - Computing SVD for differential_head_2_11_ov
+2025-11-19 17:28:39,437 - INFO - Saved SVD for layer 2, head 11, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head11_ov.pt
+2025-11-19 17:28:39,437 - INFO - Computing SVD for differential_head_3_0_qk
+2025-11-19 17:28:39,612 - INFO - Saved SVD for layer 3, head 0, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head0_qk.pt
+2025-11-19 17:28:39,612 - INFO - Computing SVD for differential_head_3_0_ov
+2025-11-19 17:28:39,928 - INFO - Saved SVD for layer 3, head 0, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head0_ov.pt
+2025-11-19 17:28:39,928 - INFO - Computing SVD for differential_head_3_1_qk
+2025-11-19 17:28:40,103 - INFO - Saved SVD for layer 3, head 1, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head1_qk.pt
+2025-11-19 17:28:40,103 - INFO - Computing SVD for differential_head_3_1_ov
+2025-11-19 17:28:40,465 - INFO - Saved SVD for layer 3, head 1, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head1_ov.pt
+2025-11-19 17:28:40,465 - INFO - Computing SVD for differential_head_3_2_qk
+2025-11-19 17:28:40,640 - INFO - Saved SVD for layer 3, head 2, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head2_qk.pt
+2025-11-19 17:28:40,640 - INFO - Computing SVD for differential_head_3_2_ov
+2025-11-19 17:28:41,004 - INFO - Saved SVD for layer 3, head 2, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head2_ov.pt
+2025-11-19 17:28:41,004 - INFO - Computing SVD for differential_head_3_3_qk
+2025-11-19 17:28:41,177 - INFO - Saved SVD for layer 3, head 3, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head3_qk.pt
+2025-11-19 17:28:41,177 - INFO - Computing SVD for differential_head_3_3_ov
+2025-11-19 17:28:41,534 - INFO - Saved SVD for layer 3, head 3, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head3_ov.pt
+2025-11-19 17:28:41,534 - INFO - Computing SVD for differential_head_3_4_qk
+2025-11-19 17:28:41,705 - INFO - Saved SVD for layer 3, head 4, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head4_qk.pt
+2025-11-19 17:28:41,705 - INFO - Computing SVD for differential_head_3_4_ov
+2025-11-19 17:28:41,994 - INFO - Saved SVD for layer 3, head 4, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head4_ov.pt
+2025-11-19 17:28:41,994 - INFO - Computing SVD for differential_head_3_5_qk
+2025-11-19 17:28:42,175 - INFO - Saved SVD for layer 3, head 5, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head5_qk.pt
+2025-11-19 17:28:42,175 - INFO - Computing SVD for differential_head_3_5_ov
+2025-11-19 17:28:42,583 - INFO - Saved SVD for layer 3, head 5, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head5_ov.pt
+2025-11-19 17:28:42,583 - INFO - Computing SVD for differential_head_3_6_qk
+2025-11-19 17:28:42,759 - INFO - Saved SVD for layer 3, head 6, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head6_qk.pt
+2025-11-19 17:28:42,759 - INFO - Computing SVD for differential_head_3_6_ov
+2025-11-19 17:28:43,130 - INFO - Saved SVD for layer 3, head 6, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head6_ov.pt
+2025-11-19 17:28:43,130 - INFO - Computing SVD for differential_head_3_7_qk
+2025-11-19 17:28:43,301 - INFO - Saved SVD for layer 3, head 7, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head7_qk.pt
+2025-11-19 17:28:43,301 - INFO - Computing SVD for differential_head_3_7_ov
+2025-11-19 17:28:43,685 - INFO - Saved SVD for layer 3, head 7, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head7_ov.pt
+2025-11-19 17:28:43,685 - INFO - Computing SVD for differential_head_3_8_qk
+2025-11-19 17:28:43,862 - INFO - Saved SVD for layer 3, head 8, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head8_qk.pt
+2025-11-19 17:28:43,862 - INFO - Computing SVD for differential_head_3_8_ov
+2025-11-19 17:28:44,228 - INFO - Saved SVD for layer 3, head 8, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head8_ov.pt
+2025-11-19 17:28:44,228 - INFO - Computing SVD for differential_head_3_9_qk
+2025-11-19 17:28:44,400 - INFO - Saved SVD for layer 3, head 9, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head9_qk.pt
+2025-11-19 17:28:44,400 - INFO - Computing SVD for differential_head_3_9_ov
+2025-11-19 17:28:44,736 - INFO - Saved SVD for layer 3, head 9, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head9_ov.pt
+2025-11-19 17:28:44,736 - INFO - Computing SVD for differential_head_3_10_qk
+2025-11-19 17:28:44,907 - INFO - Saved SVD for layer 3, head 10, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head10_qk.pt
+2025-11-19 17:28:44,907 - INFO - Computing SVD for differential_head_3_10_ov
+2025-11-19 17:28:45,254 - INFO - Saved SVD for layer 3, head 10, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head10_ov.pt
+2025-11-19 17:28:45,254 - INFO - Computing SVD for differential_head_3_11_qk
+2025-11-19 17:28:45,426 - INFO - Saved SVD for layer 3, head 11, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head11_qk.pt
+2025-11-19 17:28:45,426 - INFO - Computing SVD for differential_head_3_11_ov
+2025-11-19 17:28:45,805 - INFO - Saved SVD for layer 3, head 11, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head11_ov.pt
+2025-11-19 17:28:45,805 - INFO - Computing SVD for differential_head_4_0_qk
+2025-11-19 17:28:45,982 - INFO - Saved SVD for layer 4, head 0, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head0_qk.pt
+2025-11-19 17:28:45,983 - INFO - Computing SVD for differential_head_4_0_ov
+2025-11-19 17:28:46,366 - INFO - Saved SVD for layer 4, head 0, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head0_ov.pt
+2025-11-19 17:28:46,366 - INFO - Computing SVD for differential_head_4_1_qk
+2025-11-19 17:28:46,537 - INFO - Saved SVD for layer 4, head 1, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head1_qk.pt
+2025-11-19 17:28:46,538 - INFO - Computing SVD for differential_head_4_1_ov
+2025-11-19 17:28:46,879 - INFO - Saved SVD for layer 4, head 1, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head1_ov.pt
+2025-11-19 17:28:46,879 - INFO - Computing SVD for differential_head_4_2_qk
+2025-11-19 17:28:47,050 - INFO - Saved SVD for layer 4, head 2, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head2_qk.pt
+2025-11-19 17:28:47,051 - INFO - Computing SVD for differential_head_4_2_ov
+2025-11-19 17:28:47,362 - INFO - Saved SVD for layer 4, head 2, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head2_ov.pt
+2025-11-19 17:28:47,362 - INFO - Computing SVD for differential_head_4_3_qk
+2025-11-19 17:28:47,533 - INFO - Saved SVD for layer 4, head 3, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head3_qk.pt
+2025-11-19 17:28:47,533 - INFO - Computing SVD for differential_head_4_3_ov
+2025-11-19 17:28:47,893 - INFO - Saved SVD for layer 4, head 3, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head3_ov.pt
+2025-11-19 17:28:47,893 - INFO - Computing SVD for differential_head_4_4_qk
+2025-11-19 17:28:48,069 - INFO - Saved SVD for layer 4, head 4, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head4_qk.pt
+2025-11-19 17:28:48,069 - INFO - Computing SVD for differential_head_4_4_ov
+2025-11-19 17:28:48,435 - INFO - Saved SVD for layer 4, head 4, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head4_ov.pt
+2025-11-19 17:28:48,436 - INFO - Computing SVD for differential_head_4_5_qk
+2025-11-19 17:28:48,597 - INFO - Saved SVD for layer 4, head 5, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head5_qk.pt
+2025-11-19 17:28:48,597 - INFO - Computing SVD for differential_head_4_5_ov
+2025-11-19 17:28:48,909 - INFO - Saved SVD for layer 4, head 5, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head5_ov.pt
+2025-11-19 17:28:48,909 - INFO - Computing SVD for differential_head_4_6_qk
+2025-11-19 17:28:49,084 - INFO - Saved SVD for layer 4, head 6, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head6_qk.pt
+2025-11-19 17:28:49,084 - INFO - Computing SVD for differential_head_4_6_ov
+2025-11-19 17:28:49,416 - INFO - Saved SVD for layer 4, head 6, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head6_ov.pt
+2025-11-19 17:28:49,416 - INFO - Computing SVD for differential_head_4_7_qk
+2025-11-19 17:28:49,586 - INFO - Saved SVD for layer 4, head 7, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head7_qk.pt
+2025-11-19 17:28:49,586 - INFO - Computing SVD for differential_head_4_7_ov
+2025-11-19 17:28:49,918 - INFO - Saved SVD for layer 4, head 7, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head7_ov.pt
+2025-11-19 17:28:49,918 - INFO - Computing SVD for differential_head_4_8_qk
+2025-11-19 17:28:50,088 - INFO - Saved SVD for layer 4, head 8, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head8_qk.pt
+2025-11-19 17:28:50,088 - INFO - Computing SVD for differential_head_4_8_ov
+2025-11-19 17:28:50,398 - INFO - Saved SVD for layer 4, head 8, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head8_ov.pt
+2025-11-19 17:28:50,398 - INFO - Computing SVD for differential_head_4_9_qk
+2025-11-19 17:28:50,578 - INFO - Saved SVD for layer 4, head 9, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head9_qk.pt
+2025-11-19 17:28:50,578 - INFO - Computing SVD for differential_head_4_9_ov
+2025-11-19 17:28:50,942 - INFO - Saved SVD for layer 4, head 9, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head9_ov.pt
+2025-11-19 17:28:50,942 - INFO - Computing SVD for differential_head_4_10_qk
+2025-11-19 17:28:51,117 - INFO - Saved SVD for layer 4, head 10, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head10_qk.pt
+2025-11-19 17:28:51,118 - INFO - Computing SVD for differential_head_4_10_ov
+2025-11-19 17:28:51,481 - INFO - Saved SVD for layer 4, head 10, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head10_ov.pt
+2025-11-19 17:28:51,481 - INFO - Computing SVD for differential_head_4_11_qk
+2025-11-19 17:28:51,655 - INFO - Saved SVD for layer 4, head 11, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head11_qk.pt
+2025-11-19 17:28:51,655 - INFO - Computing SVD for differential_head_4_11_ov
+2025-11-19 17:28:52,022 - INFO - Saved SVD for layer 4, head 11, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head11_ov.pt
+2025-11-19 17:28:52,022 - INFO - Computing SVD for differential_head_5_0_qk
+2025-11-19 17:28:52,192 - INFO - Saved SVD for layer 5, head 0, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head0_qk.pt
+2025-11-19 17:28:52,192 - INFO - Computing SVD for differential_head_5_0_ov
+2025-11-19 17:28:52,535 - INFO - Saved SVD for layer 5, head 0, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head0_ov.pt
+2025-11-19 17:28:52,535 - INFO - Computing SVD for differential_head_5_1_qk
+2025-11-19 17:28:52,700 - INFO - Saved SVD for layer 5, head 1, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head1_qk.pt
+2025-11-19 17:28:52,700 - INFO - Computing SVD for differential_head_5_1_ov
+2025-11-19 17:28:53,026 - INFO - Saved SVD for layer 5, head 1, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head1_ov.pt
+2025-11-19 17:28:53,026 - INFO - Computing SVD for differential_head_5_2_qk
+2025-11-19 17:28:53,196 - INFO - Saved SVD for layer 5, head 2, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head2_qk.pt
+2025-11-19 17:28:53,196 - INFO - Computing SVD for differential_head_5_2_ov
+2025-11-19 17:28:53,540 - INFO - Saved SVD for layer 5, head 2, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head2_ov.pt
+2025-11-19 17:28:53,540 - INFO - Computing SVD for differential_head_5_3_qk
+2025-11-19 17:28:53,711 - INFO - Saved SVD for layer 5, head 3, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head3_qk.pt
+2025-11-19 17:28:53,711 - INFO - Computing SVD for differential_head_5_3_ov
+2025-11-19 17:28:54,056 - INFO - Saved SVD for layer 5, head 3, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head3_ov.pt
+2025-11-19 17:28:54,056 - INFO - Computing SVD for differential_head_5_4_qk
+2025-11-19 17:28:54,233 - INFO - Saved SVD for layer 5, head 4, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head4_qk.pt
+2025-11-19 17:28:54,233 - INFO - Computing SVD for differential_head_5_4_ov
+2025-11-19 17:28:54,562 - INFO - Saved SVD for layer 5, head 4, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head4_ov.pt
+2025-11-19 17:28:54,562 - INFO - Computing SVD for differential_head_5_5_qk
+2025-11-19 17:28:54,739 - INFO - Saved SVD for layer 5, head 5, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head5_qk.pt
+2025-11-19 17:28:54,739 - INFO - Computing SVD for differential_head_5_5_ov
+2025-11-19 17:28:55,129 - INFO - Saved SVD for layer 5, head 5, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head5_ov.pt
+2025-11-19 17:28:55,130 - INFO - Computing SVD for differential_head_5_6_qk
+2025-11-19 17:28:55,306 - INFO - Saved SVD for layer 5, head 6, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head6_qk.pt
+2025-11-19 17:28:55,306 - INFO - Computing SVD for differential_head_5_6_ov
+2025-11-19 17:28:55,672 - INFO - Saved SVD for layer 5, head 6, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head6_ov.pt
+2025-11-19 17:28:55,672 - INFO - Computing SVD for differential_head_5_7_qk
+2025-11-19 17:28:55,847 - INFO - Saved SVD for layer 5, head 7, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head7_qk.pt
+2025-11-19 17:28:55,847 - INFO - Computing SVD for differential_head_5_7_ov
+2025-11-19 17:28:56,178 - INFO - Saved SVD for layer 5, head 7, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head7_ov.pt
+2025-11-19 17:28:56,179 - INFO - Computing SVD for differential_head_5_8_qk
+2025-11-19 17:28:56,354 - INFO - Saved SVD for layer 5, head 8, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head8_qk.pt
+2025-11-19 17:28:56,354 - INFO - Computing SVD for differential_head_5_8_ov
+2025-11-19 17:28:56,721 - INFO - Saved SVD for layer 5, head 8, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head8_ov.pt
+2025-11-19 17:28:56,721 - INFO - Computing SVD for differential_head_5_9_qk
+2025-11-19 17:28:56,891 - INFO - Saved SVD for layer 5, head 9, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head9_qk.pt
+2025-11-19 17:28:56,891 - INFO - Computing SVD for differential_head_5_9_ov
+2025-11-19 17:28:57,245 - INFO - Saved SVD for layer 5, head 9, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head9_ov.pt
+2025-11-19 17:28:57,245 - INFO - Computing SVD for differential_head_5_10_qk
+2025-11-19 17:28:57,415 - INFO - Saved SVD for layer 5, head 10, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head10_qk.pt
+2025-11-19 17:28:57,415 - INFO - Computing SVD for differential_head_5_10_ov
+2025-11-19 17:28:57,774 - INFO - Saved SVD for layer 5, head 10, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head10_ov.pt
+2025-11-19 17:28:57,774 - INFO - Computing SVD for differential_head_5_11_qk
+2025-11-19 17:28:57,939 - INFO - Saved SVD for layer 5, head 11, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head11_qk.pt
+2025-11-19 17:28:57,939 - INFO - Computing SVD for differential_head_5_11_ov
+2025-11-19 17:28:58,363 - INFO - Saved SVD for layer 5, head 11, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head11_ov.pt
+2025-11-19 17:28:58,363 - INFO - Computing SVD for differential_head_6_0_qk
+2025-11-19 17:28:58,538 - INFO - Saved SVD for layer 6, head 0, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head0_qk.pt
+2025-11-19 17:28:58,539 - INFO - Computing SVD for differential_head_6_0_ov
+2025-11-19 17:28:58,905 - INFO - Saved SVD for layer 6, head 0, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head0_ov.pt
+2025-11-19 17:28:58,905 - INFO - Computing SVD for differential_head_6_1_qk
+2025-11-19 17:28:59,075 - INFO - Saved SVD for layer 6, head 1, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head1_qk.pt
+2025-11-19 17:28:59,075 - INFO - Computing SVD for differential_head_6_1_ov
+2025-11-19 17:28:59,446 - INFO - Saved SVD for layer 6, head 1, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head1_ov.pt
+2025-11-19 17:28:59,446 - INFO - Computing SVD for differential_head_6_2_qk
+2025-11-19 17:28:59,621 - INFO - Saved SVD for layer 6, head 2, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head2_qk.pt
+2025-11-19 17:28:59,621 - INFO - Computing SVD for differential_head_6_2_ov
+2025-11-19 17:28:59,974 - INFO - Saved SVD for layer 6, head 2, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head2_ov.pt
+2025-11-19 17:28:59,974 - INFO - Computing SVD for differential_head_6_3_qk
+2025-11-19 17:29:00,149 - INFO - Saved SVD for layer 6, head 3, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head3_qk.pt
+2025-11-19 17:29:00,149 - INFO - Computing SVD for differential_head_6_3_ov
+2025-11-19 17:29:00,474 - INFO - Saved SVD for layer 6, head 3, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head3_ov.pt
+2025-11-19 17:29:00,474 - INFO - Computing SVD for differential_head_6_4_qk
+2025-11-19 17:29:00,645 - INFO - Saved SVD for layer 6, head 4, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head4_qk.pt
+2025-11-19 17:29:00,645 - INFO - Computing SVD for differential_head_6_4_ov
+2025-11-19 17:29:00,955 - INFO - Saved SVD for layer 6, head 4, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head4_ov.pt
+2025-11-19 17:29:00,955 - INFO - Computing SVD for differential_head_6_5_qk
+2025-11-19 17:29:01,125 - INFO - Saved SVD for layer 6, head 5, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head5_qk.pt
+2025-11-19 17:29:01,125 - INFO - Computing SVD for differential_head_6_5_ov
+2025-11-19 17:29:01,466 - INFO - Saved SVD for layer 6, head 5, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head5_ov.pt
+2025-11-19 17:29:01,466 - INFO - Computing SVD for differential_head_6_6_qk
+2025-11-19 17:29:01,651 - INFO - Saved SVD for layer 6, head 6, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head6_qk.pt
+2025-11-19 17:29:01,651 - INFO - Computing SVD for differential_head_6_6_ov
+2025-11-19 17:29:02,025 - INFO - Saved SVD for layer 6, head 6, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head6_ov.pt
+2025-11-19 17:29:02,025 - INFO - Computing SVD for differential_head_6_7_qk
+2025-11-19 17:29:02,201 - INFO - Saved SVD for layer 6, head 7, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head7_qk.pt
+2025-11-19 17:29:02,201 - INFO - Computing SVD for differential_head_6_7_ov
+2025-11-19 17:29:02,547 - INFO - Saved SVD for layer 6, head 7, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head7_ov.pt
+2025-11-19 17:29:02,547 - INFO - Computing SVD for differential_head_6_8_qk
+2025-11-19 17:29:02,719 - INFO - Saved SVD for layer 6, head 8, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head8_qk.pt
+2025-11-19 17:29:02,719 - INFO - Computing SVD for differential_head_6_8_ov
+2025-11-19 17:29:03,065 - INFO - Saved SVD for layer 6, head 8, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head8_ov.pt
+2025-11-19 17:29:03,065 - INFO - Computing SVD for differential_head_6_9_qk
+2025-11-19 17:29:03,241 - INFO - Saved SVD for layer 6, head 9, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head9_qk.pt
+2025-11-19 17:29:03,241 - INFO - Computing SVD for differential_head_6_9_ov
+2025-11-19 17:29:03,625 - INFO - Saved SVD for layer 6, head 9, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head9_ov.pt
+2025-11-19 17:29:03,625 - INFO - Computing SVD for differential_head_6_10_qk
+2025-11-19 17:29:03,797 - INFO - Saved SVD for layer 6, head 10, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head10_qk.pt
+2025-11-19 17:29:03,797 - INFO - Computing SVD for differential_head_6_10_ov
+2025-11-19 17:29:04,117 - INFO - Saved SVD for layer 6, head 10, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head10_ov.pt
+2025-11-19 17:29:04,117 - INFO - Computing SVD for differential_head_6_11_qk
+2025-11-19 17:29:04,294 - INFO - Saved SVD for layer 6, head 11, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head11_qk.pt
+2025-11-19 17:29:04,294 - INFO - Computing SVD for differential_head_6_11_ov
+2025-11-19 17:29:04,671 - INFO - Saved SVD for layer 6, head 11, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head11_ov.pt
+2025-11-19 17:29:04,671 - INFO - Computing SVD for differential_head_7_0_qk
+2025-11-19 17:29:04,851 - INFO - Saved SVD for layer 7, head 0, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head0_qk.pt
+2025-11-19 17:29:04,852 - INFO - Computing SVD for differential_head_7_0_ov
+2025-11-19 17:29:05,195 - INFO - Saved SVD for layer 7, head 0, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head0_ov.pt
+2025-11-19 17:29:05,195 - INFO - Computing SVD for differential_head_7_1_qk
+2025-11-19 17:29:05,364 - INFO - Saved SVD for layer 7, head 1, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head1_qk.pt
+2025-11-19 17:29:05,364 - INFO - Computing SVD for differential_head_7_1_ov
+2025-11-19 17:29:05,685 - INFO - Saved SVD for layer 7, head 1, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head1_ov.pt
+2025-11-19 17:29:05,685 - INFO - Computing SVD for differential_head_7_2_qk
+2025-11-19 17:29:05,865 - INFO - Saved SVD for layer 7, head 2, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head2_qk.pt
+2025-11-19 17:29:05,865 - INFO - Computing SVD for differential_head_7_2_ov
+2025-11-19 17:29:06,263 - INFO - Saved SVD for layer 7, head 2, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head2_ov.pt
+2025-11-19 17:29:06,263 - INFO - Computing SVD for differential_head_7_3_qk
+2025-11-19 17:29:06,438 - INFO - Saved SVD for layer 7, head 3, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head3_qk.pt
+2025-11-19 17:29:06,438 - INFO - Computing SVD for differential_head_7_3_ov
+2025-11-19 17:29:06,771 - INFO - Saved SVD for layer 7, head 3, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head3_ov.pt
+2025-11-19 17:29:06,771 - INFO - Computing SVD for differential_head_7_4_qk
+2025-11-19 17:29:06,941 - INFO - Saved SVD for layer 7, head 4, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head4_qk.pt
+2025-11-19 17:29:06,941 - INFO - Computing SVD for differential_head_7_4_ov
+2025-11-19 17:29:07,300 - INFO - Saved SVD for layer 7, head 4, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head4_ov.pt
+2025-11-19 17:29:07,300 - INFO - Computing SVD for differential_head_7_5_qk
+2025-11-19 17:29:07,475 - INFO - Saved SVD for layer 7, head 5, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head5_qk.pt
+2025-11-19 17:29:07,475 - INFO - Computing SVD for differential_head_7_5_ov
+2025-11-19 17:29:07,823 - INFO - Saved SVD for layer 7, head 5, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head5_ov.pt
+2025-11-19 17:29:07,823 - INFO - Computing SVD for differential_head_7_6_qk
+2025-11-19 17:29:07,998 - INFO - Saved SVD for layer 7, head 6, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head6_qk.pt
+2025-11-19 17:29:07,998 - INFO - Computing SVD for differential_head_7_6_ov
+2025-11-19 17:29:08,309 - INFO - Saved SVD for layer 7, head 6, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head6_ov.pt
+2025-11-19 17:29:08,309 - INFO - Computing SVD for differential_head_7_7_qk
+2025-11-19 17:29:08,479 - INFO - Saved SVD for layer 7, head 7, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head7_qk.pt
+2025-11-19 17:29:08,479 - INFO - Computing SVD for differential_head_7_7_ov
+2025-11-19 17:29:08,830 - INFO - Saved SVD for layer 7, head 7, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head7_ov.pt
+2025-11-19 17:29:08,830 - INFO - Computing SVD for differential_head_7_8_qk
+2025-11-19 17:29:09,006 - INFO - Saved SVD for layer 7, head 8, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head8_qk.pt
+2025-11-19 17:29:09,006 - INFO - Computing SVD for differential_head_7_8_ov
+2025-11-19 17:29:09,367 - INFO - Saved SVD for layer 7, head 8, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head8_ov.pt
+2025-11-19 17:29:09,368 - INFO - Computing SVD for differential_head_7_9_qk
+2025-11-19 17:29:09,551 - INFO - Saved SVD for layer 7, head 9, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head9_qk.pt
+2025-11-19 17:29:09,551 - INFO - Computing SVD for differential_head_7_9_ov
+2025-11-19 17:29:09,882 - INFO - Saved SVD for layer 7, head 9, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head9_ov.pt
+2025-11-19 17:29:09,883 - INFO - Computing SVD for differential_head_7_10_qk
+2025-11-19 17:29:10,062 - INFO - Saved SVD for layer 7, head 10, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head10_qk.pt
+2025-11-19 17:29:10,063 - INFO - Computing SVD for differential_head_7_10_ov
+2025-11-19 17:29:10,425 - INFO - Saved SVD for layer 7, head 10, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head10_ov.pt
+2025-11-19 17:29:10,425 - INFO - Computing SVD for differential_head_7_11_qk
+2025-11-19 17:29:10,601 - INFO - Saved SVD for layer 7, head 11, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head11_qk.pt
+2025-11-19 17:29:10,601 - INFO - Computing SVD for differential_head_7_11_ov
+2025-11-19 17:29:10,963 - INFO - Saved SVD for layer 7, head 11, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head11_ov.pt
+2025-11-19 17:29:10,963 - INFO - Computing SVD for differential_head_8_0_qk
+2025-11-19 17:29:11,135 - INFO - Saved SVD for layer 8, head 0, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head0_qk.pt
+2025-11-19 17:29:11,135 - INFO - Computing SVD for differential_head_8_0_ov
+2025-11-19 17:29:11,435 - INFO - Saved SVD for layer 8, head 0, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head0_ov.pt
+2025-11-19 17:29:11,435 - INFO - Computing SVD for differential_head_8_1_qk
+2025-11-19 17:29:11,607 - INFO - Saved SVD for layer 8, head 1, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head1_qk.pt
+2025-11-19 17:29:11,607 - INFO - Computing SVD for differential_head_8_1_ov
+2025-11-19 17:29:11,984 - INFO - Saved SVD for layer 8, head 1, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head1_ov.pt
+2025-11-19 17:29:11,984 - INFO - Computing SVD for differential_head_8_2_qk
+2025-11-19 17:29:12,166 - INFO - Saved SVD for layer 8, head 2, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head2_qk.pt
+2025-11-19 17:29:12,166 - INFO - Computing SVD for differential_head_8_2_ov
+2025-11-19 17:29:12,504 - INFO - Saved SVD for layer 8, head 2, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head2_ov.pt
+2025-11-19 17:29:12,504 - INFO - Computing SVD for differential_head_8_3_qk
+2025-11-19 17:29:12,681 - INFO - Saved SVD for layer 8, head 3, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head3_qk.pt
+2025-11-19 17:29:12,681 - INFO - Computing SVD for differential_head_8_3_ov
+2025-11-19 17:29:12,991 - INFO - Saved SVD for layer 8, head 3, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head3_ov.pt
+2025-11-19 17:29:12,991 - INFO - Computing SVD for differential_head_8_4_qk
+2025-11-19 17:29:13,166 - INFO - Saved SVD for layer 8, head 4, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head4_qk.pt
+2025-11-19 17:29:13,166 - INFO - Computing SVD for differential_head_8_4_ov
+2025-11-19 17:29:13,509 - INFO - Saved SVD for layer 8, head 4, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head4_ov.pt
+2025-11-19 17:29:13,509 - INFO - Computing SVD for differential_head_8_5_qk
+2025-11-19 17:29:13,679 - INFO - Saved SVD for layer 8, head 5, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head5_qk.pt
+2025-11-19 17:29:13,679 - INFO - Computing SVD for differential_head_8_5_ov
+2025-11-19 17:29:14,047 - INFO - Saved SVD for layer 8, head 5, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head5_ov.pt
+2025-11-19 17:29:14,047 - INFO - Computing SVD for differential_head_8_6_qk
+2025-11-19 17:29:14,212 - INFO - Saved SVD for layer 8, head 6, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head6_qk.pt
+2025-11-19 17:29:14,212 - INFO - Computing SVD for differential_head_8_6_ov
+2025-11-19 17:29:14,535 - INFO - Saved SVD for layer 8, head 6, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head6_ov.pt
+2025-11-19 17:29:14,535 - INFO - Computing SVD for differential_head_8_7_qk
+2025-11-19 17:29:14,710 - INFO - Saved SVD for layer 8, head 7, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head7_qk.pt
+2025-11-19 17:29:14,710 - INFO - Computing SVD for differential_head_8_7_ov
+2025-11-19 17:29:15,087 - INFO - Saved SVD for layer 8, head 7, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head7_ov.pt
+2025-11-19 17:29:15,087 - INFO - Computing SVD for differential_head_8_8_qk
+2025-11-19 17:29:15,259 - INFO - Saved SVD for layer 8, head 8, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head8_qk.pt
+2025-11-19 17:29:15,259 - INFO - Computing SVD for differential_head_8_8_ov
+2025-11-19 17:29:15,648 - INFO - Saved SVD for layer 8, head 8, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head8_ov.pt
+2025-11-19 17:29:15,648 - INFO - Computing SVD for differential_head_8_9_qk
+2025-11-19 17:29:15,824 - INFO - Saved SVD for layer 8, head 9, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head9_qk.pt
+2025-11-19 17:29:15,824 - INFO - Computing SVD for differential_head_8_9_ov
+2025-11-19 17:29:16,159 - INFO - Saved SVD for layer 8, head 9, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head9_ov.pt
+2025-11-19 17:29:16,159 - INFO - Computing SVD for differential_head_8_10_qk
+2025-11-19 17:29:16,334 - INFO - Saved SVD for layer 8, head 10, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head10_qk.pt
+2025-11-19 17:29:16,334 - INFO - Computing SVD for differential_head_8_10_ov
+2025-11-19 17:29:16,637 - INFO - Saved SVD for layer 8, head 10, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head10_ov.pt
+2025-11-19 17:29:16,638 - INFO - Computing SVD for differential_head_8_11_qk
+2025-11-19 17:29:16,814 - INFO - Saved SVD for layer 8, head 11, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head11_qk.pt
+2025-11-19 17:29:16,814 - INFO - Computing SVD for differential_head_8_11_ov
+2025-11-19 17:29:17,183 - INFO - Saved SVD for layer 8, head 11, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head11_ov.pt
+2025-11-19 17:29:17,183 - INFO - Computing SVD for differential_head_9_0_qk
+2025-11-19 17:29:17,360 - INFO - Saved SVD for layer 9, head 0, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head0_qk.pt
+2025-11-19 17:29:17,360 - INFO - Computing SVD for differential_head_9_0_ov
+2025-11-19 17:29:17,726 - INFO - Saved SVD for layer 9, head 0, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head0_ov.pt
+2025-11-19 17:29:17,726 - INFO - Computing SVD for differential_head_9_1_qk
+2025-11-19 17:29:17,908 - INFO - Saved SVD for layer 9, head 1, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head1_qk.pt
+2025-11-19 17:29:17,908 - INFO - Computing SVD for differential_head_9_1_ov
+2025-11-19 17:29:18,245 - INFO - Saved SVD for layer 9, head 1, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head1_ov.pt
+2025-11-19 17:29:18,245 - INFO - Computing SVD for differential_head_9_2_qk
+2025-11-19 17:29:18,417 - INFO - Saved SVD for layer 9, head 2, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head2_qk.pt
+2025-11-19 17:29:18,417 - INFO - Computing SVD for differential_head_9_2_ov
+2025-11-19 17:29:18,793 - INFO - Saved SVD for layer 9, head 2, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head2_ov.pt
+2025-11-19 17:29:18,793 - INFO - Computing SVD for differential_head_9_3_qk
+2025-11-19 17:29:18,959 - INFO - Saved SVD for layer 9, head 3, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head3_qk.pt
+2025-11-19 17:29:18,959 - INFO - Computing SVD for differential_head_9_3_ov
+2025-11-19 17:29:19,277 - INFO - Saved SVD for layer 9, head 3, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head3_ov.pt
+2025-11-19 17:29:19,277 - INFO - Computing SVD for differential_head_9_4_qk
+2025-11-19 17:29:19,450 - INFO - Saved SVD for layer 9, head 4, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head4_qk.pt
+2025-11-19 17:29:19,450 - INFO - Computing SVD for differential_head_9_4_ov
+2025-11-19 17:29:19,784 - INFO - Saved SVD for layer 9, head 4, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head4_ov.pt
+2025-11-19 17:29:19,784 - INFO - Computing SVD for differential_head_9_5_qk
+2025-11-19 17:29:19,966 - INFO - Saved SVD for layer 9, head 5, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head5_qk.pt
+2025-11-19 17:29:19,966 - INFO - Computing SVD for differential_head_9_5_ov
+2025-11-19 17:29:20,310 - INFO - Saved SVD for layer 9, head 5, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head5_ov.pt
+2025-11-19 17:29:20,310 - INFO - Computing SVD for differential_head_9_6_qk
+2025-11-19 17:29:20,492 - INFO - Saved SVD for layer 9, head 6, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head6_qk.pt
+2025-11-19 17:29:20,492 - INFO - Computing SVD for differential_head_9_6_ov
+2025-11-19 17:29:20,827 - INFO - Saved SVD for layer 9, head 6, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head6_ov.pt
+2025-11-19 17:29:20,827 - INFO - Computing SVD for differential_head_9_7_qk
+2025-11-19 17:29:21,004 - INFO - Saved SVD for layer 9, head 7, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head7_qk.pt
+2025-11-19 17:29:21,005 - INFO - Computing SVD for differential_head_9_7_ov
+2025-11-19 17:29:21,315 - INFO - Saved SVD for layer 9, head 7, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head7_ov.pt
+2025-11-19 17:29:21,315 - INFO - Computing SVD for differential_head_9_8_qk
+2025-11-19 17:29:21,482 - INFO - Saved SVD for layer 9, head 8, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head8_qk.pt
+2025-11-19 17:29:21,482 - INFO - Computing SVD for differential_head_9_8_ov
+2025-11-19 17:29:21,853 - INFO - Saved SVD for layer 9, head 8, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head8_ov.pt
+2025-11-19 17:29:21,853 - INFO - Computing SVD for differential_head_9_9_qk
+2025-11-19 17:29:22,029 - INFO - Saved SVD for layer 9, head 9, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head9_qk.pt
+2025-11-19 17:29:22,029 - INFO - Computing SVD for differential_head_9_9_ov
+2025-11-19 17:29:22,406 - INFO - Saved SVD for layer 9, head 9, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head9_ov.pt
+2025-11-19 17:29:22,406 - INFO - Computing SVD for differential_head_9_10_qk
+2025-11-19 17:29:22,578 - INFO - Saved SVD for layer 9, head 10, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head10_qk.pt
+2025-11-19 17:29:22,578 - INFO - Computing SVD for differential_head_9_10_ov
+2025-11-19 17:29:22,904 - INFO - Saved SVD for layer 9, head 10, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head10_ov.pt
+2025-11-19 17:29:22,904 - INFO - Computing SVD for differential_head_9_11_qk
+2025-11-19 17:29:23,084 - INFO - Saved SVD for layer 9, head 11, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head11_qk.pt
+2025-11-19 17:29:23,084 - INFO - Computing SVD for differential_head_9_11_ov
+2025-11-19 17:29:23,436 - INFO - Saved SVD for layer 9, head 11, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head11_ov.pt
+2025-11-19 17:29:23,436 - INFO - Computing SVD for differential_head_10_0_qk
+2025-11-19 17:29:23,611 - INFO - Saved SVD for layer 10, head 0, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head0_qk.pt
+2025-11-19 17:29:23,611 - INFO - Computing SVD for differential_head_10_0_ov
+2025-11-19 17:29:23,998 - INFO - Saved SVD for layer 10, head 0, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head0_ov.pt
+2025-11-19 17:29:23,999 - INFO - Computing SVD for differential_head_10_1_qk
+2025-11-19 17:29:24,173 - INFO - Saved SVD for layer 10, head 1, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head1_qk.pt
+2025-11-19 17:29:24,173 - INFO - Computing SVD for differential_head_10_1_ov
+2025-11-19 17:29:24,488 - INFO - Saved SVD for layer 10, head 1, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head1_ov.pt
+2025-11-19 17:29:24,488 - INFO - Computing SVD for differential_head_10_2_qk
+2025-11-19 17:29:24,659 - INFO - Saved SVD for layer 10, head 2, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head2_qk.pt
+2025-11-19 17:29:24,659 - INFO - Computing SVD for differential_head_10_2_ov
+2025-11-19 17:29:24,985 - INFO - Saved SVD for layer 10, head 2, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head2_ov.pt
+2025-11-19 17:29:24,985 - INFO - Computing SVD for differential_head_10_3_qk
+2025-11-19 17:29:25,150 - INFO - Saved SVD for layer 10, head 3, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head3_qk.pt
+2025-11-19 17:29:25,150 - INFO - Computing SVD for differential_head_10_3_ov
+2025-11-19 17:29:25,501 - INFO - Saved SVD for layer 10, head 3, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head3_ov.pt
+2025-11-19 17:29:25,502 - INFO - Computing SVD for differential_head_10_4_qk
+2025-11-19 17:29:25,672 - INFO - Saved SVD for layer 10, head 4, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head4_qk.pt
+2025-11-19 17:29:25,672 - INFO - Computing SVD for differential_head_10_4_ov
+2025-11-19 17:29:25,982 - INFO - Saved SVD for layer 10, head 4, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head4_ov.pt
+2025-11-19 17:29:25,982 - INFO - Computing SVD for differential_head_10_5_qk
+2025-11-19 17:29:26,151 - INFO - Saved SVD for layer 10, head 5, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head5_qk.pt
+2025-11-19 17:29:26,151 - INFO - Computing SVD for differential_head_10_5_ov
+2025-11-19 17:29:26,526 - INFO - Saved SVD for layer 10, head 5, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head5_ov.pt
+2025-11-19 17:29:26,527 - INFO - Computing SVD for differential_head_10_6_qk
+2025-11-19 17:29:26,707 - INFO - Saved SVD for layer 10, head 6, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head6_qk.pt
+2025-11-19 17:29:26,708 - INFO - Computing SVD for differential_head_10_6_ov
+2025-11-19 17:29:27,015 - INFO - Saved SVD for layer 10, head 6, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head6_ov.pt
+2025-11-19 17:29:27,015 - INFO - Computing SVD for differential_head_10_7_qk
+2025-11-19 17:29:27,185 - INFO - Saved SVD for layer 10, head 7, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head7_qk.pt
+2025-11-19 17:29:27,185 - INFO - Computing SVD for differential_head_10_7_ov
+2025-11-19 17:29:27,506 - INFO - Saved SVD for layer 10, head 7, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head7_ov.pt
+2025-11-19 17:29:27,506 - INFO - Computing SVD for differential_head_10_8_qk
+2025-11-19 17:29:27,678 - INFO - Saved SVD for layer 10, head 8, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head8_qk.pt
+2025-11-19 17:29:27,678 - INFO - Computing SVD for differential_head_10_8_ov
+2025-11-19 17:29:28,006 - INFO - Saved SVD for layer 10, head 8, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head8_ov.pt
+2025-11-19 17:29:28,006 - INFO - Computing SVD for differential_head_10_9_qk
+2025-11-19 17:29:28,179 - INFO - Saved SVD for layer 10, head 9, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head9_qk.pt
+2025-11-19 17:29:28,179 - INFO - Computing SVD for differential_head_10_9_ov
+2025-11-19 17:29:28,541 - INFO - Saved SVD for layer 10, head 9, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head9_ov.pt
+2025-11-19 17:29:28,541 - INFO - Computing SVD for differential_head_10_10_qk
+2025-11-19 17:29:28,709 - INFO - Saved SVD for layer 10, head 10, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head10_qk.pt
+2025-11-19 17:29:28,709 - INFO - Computing SVD for differential_head_10_10_ov
+2025-11-19 17:29:29,037 - INFO - Saved SVD for layer 10, head 10, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head10_ov.pt
+2025-11-19 17:29:29,037 - INFO - Computing SVD for differential_head_10_11_qk
+2025-11-19 17:29:29,205 - INFO - Saved SVD for layer 10, head 11, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head11_qk.pt
+2025-11-19 17:29:29,205 - INFO - Computing SVD for differential_head_10_11_ov
+2025-11-19 17:29:29,537 - INFO - Saved SVD for layer 10, head 11, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head11_ov.pt
+2025-11-19 17:29:29,537 - INFO - Computing SVD for differential_head_11_0_qk
+2025-11-19 17:29:29,711 - INFO - Saved SVD for layer 11, head 0, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head0_qk.pt
+2025-11-19 17:29:29,711 - INFO - Computing SVD for differential_head_11_0_ov
+2025-11-19 17:29:29,907 - INFO - Saved SVD for layer 11, head 0, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head0_ov.pt
+2025-11-19 17:29:29,907 - INFO - Computing SVD for differential_head_11_1_qk
+2025-11-19 17:29:30,088 - INFO - Saved SVD for layer 11, head 1, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head1_qk.pt
+2025-11-19 17:29:30,088 - INFO - Computing SVD for differential_head_11_1_ov
+2025-11-19 17:29:30,410 - INFO - Saved SVD for layer 11, head 1, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head1_ov.pt
+2025-11-19 17:29:30,410 - INFO - Computing SVD for differential_head_11_2_qk
+2025-11-19 17:29:30,581 - INFO - Saved SVD for layer 11, head 2, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head2_qk.pt
+2025-11-19 17:29:30,581 - INFO - Computing SVD for differential_head_11_2_ov
+2025-11-19 17:29:30,956 - INFO - Saved SVD for layer 11, head 2, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head2_ov.pt
+2025-11-19 17:29:30,956 - INFO - Computing SVD for differential_head_11_3_qk
+2025-11-19 17:29:31,122 - INFO - Saved SVD for layer 11, head 3, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head3_qk.pt
+2025-11-19 17:29:31,123 - INFO - Computing SVD for differential_head_11_3_ov
+2025-11-19 17:29:31,439 - INFO - Saved SVD for layer 11, head 3, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head3_ov.pt
+2025-11-19 17:29:31,439 - INFO - Computing SVD for differential_head_11_4_qk
+2025-11-19 17:29:31,616 - INFO - Saved SVD for layer 11, head 4, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head4_qk.pt
+2025-11-19 17:29:31,616 - INFO - Computing SVD for differential_head_11_4_ov
+2025-11-19 17:29:31,890 - INFO - Saved SVD for layer 11, head 4, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head4_ov.pt
+2025-11-19 17:29:31,890 - INFO - Computing SVD for differential_head_11_5_qk
+2025-11-19 17:29:32,066 - INFO - Saved SVD for layer 11, head 5, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head5_qk.pt
+2025-11-19 17:29:32,067 - INFO - Computing SVD for differential_head_11_5_ov
+2025-11-19 17:29:32,405 - INFO - Saved SVD for layer 11, head 5, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head5_ov.pt
+2025-11-19 17:29:32,405 - INFO - Computing SVD for differential_head_11_6_qk
+2025-11-19 17:29:32,566 - INFO - Saved SVD for layer 11, head 6, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head6_qk.pt
+2025-11-19 17:29:32,566 - INFO - Computing SVD for differential_head_11_6_ov
+2025-11-19 17:29:32,857 - INFO - Saved SVD for layer 11, head 6, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head6_ov.pt
+2025-11-19 17:29:32,857 - INFO - Computing SVD for differential_head_11_7_qk
+2025-11-19 17:29:33,029 - INFO - Saved SVD for layer 11, head 7, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head7_qk.pt
+2025-11-19 17:29:33,029 - INFO - Computing SVD for differential_head_11_7_ov
+2025-11-19 17:29:33,378 - INFO - Saved SVD for layer 11, head 7, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head7_ov.pt
+2025-11-19 17:29:33,378 - INFO - Computing SVD for differential_head_11_8_qk
+2025-11-19 17:29:33,550 - INFO - Saved SVD for layer 11, head 8, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head8_qk.pt
+2025-11-19 17:29:33,550 - INFO - Computing SVD for differential_head_11_8_ov
+2025-11-19 17:29:33,597 - INFO - Saved SVD for layer 11, head 8, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head8_ov.pt
+2025-11-19 17:29:33,597 - INFO - Computing SVD for differential_head_11_9_qk
+2025-11-19 17:29:33,769 - INFO - Saved SVD for layer 11, head 9, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head9_qk.pt
+2025-11-19 17:29:33,769 - INFO - Computing SVD for differential_head_11_9_ov
+2025-11-19 17:29:34,122 - INFO - Saved SVD for layer 11, head 9, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head9_ov.pt
+2025-11-19 17:29:34,122 - INFO - Computing SVD for differential_head_11_10_qk
+2025-11-19 17:29:34,299 - INFO - Saved SVD for layer 11, head 10, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head10_qk.pt
+2025-11-19 17:29:34,299 - INFO - Computing SVD for differential_head_11_10_ov
+2025-11-19 17:29:34,606 - INFO - Saved SVD for layer 11, head 10, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head10_ov.pt
+2025-11-19 17:29:34,607 - INFO - Computing SVD for differential_head_11_11_qk
+2025-11-19 17:29:34,773 - INFO - Saved SVD for layer 11, head 11, qk to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head11_qk.pt
+2025-11-19 17:29:34,773 - INFO - Computing SVD for differential_head_11_11_ov
+2025-11-19 17:29:35,017 - INFO - Saved SVD for layer 11, head 11, ov to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head11_ov.pt
+2025-11-19 17:29:35,017 - INFO - Computing SVD for MLP layer 0 input
+2025-11-19 17:29:35,110 - INFO - Saved SVD for layer 0, head -1, mlp_in to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head-1_mlp_in.pt
+2025-11-19 17:29:35,110 - INFO - Computing SVD for MLP layer 0 output
+2025-11-19 17:29:35,198 - INFO - Saved SVD for layer 0, head -1, mlp_out to svd_cache/gpt2_12_12_768_64_ced99f0e_layer0_head-1_mlp_out.pt
+2025-11-19 17:29:35,198 - INFO - Computing SVD for MLP layer 1 input
+2025-11-19 17:29:35,293 - INFO - Saved SVD for layer 1, head -1, mlp_in to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head-1_mlp_in.pt
+2025-11-19 17:29:35,293 - INFO - Computing SVD for MLP layer 1 output
+2025-11-19 17:29:35,381 - INFO - Saved SVD for layer 1, head -1, mlp_out to svd_cache/gpt2_12_12_768_64_ced99f0e_layer1_head-1_mlp_out.pt
+2025-11-19 17:29:35,381 - INFO - Computing SVD for MLP layer 2 input
+2025-11-19 17:29:35,476 - INFO - Saved SVD for layer 2, head -1, mlp_in to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head-1_mlp_in.pt
+2025-11-19 17:29:35,476 - INFO - Computing SVD for MLP layer 2 output
+2025-11-19 17:29:35,563 - INFO - Saved SVD for layer 2, head -1, mlp_out to svd_cache/gpt2_12_12_768_64_ced99f0e_layer2_head-1_mlp_out.pt
+2025-11-19 17:29:35,563 - INFO - Computing SVD for MLP layer 3 input
+2025-11-19 17:29:35,658 - INFO - Saved SVD for layer 3, head -1, mlp_in to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head-1_mlp_in.pt
+2025-11-19 17:29:35,658 - INFO - Computing SVD for MLP layer 3 output
+2025-11-19 17:29:35,745 - INFO - Saved SVD for layer 3, head -1, mlp_out to svd_cache/gpt2_12_12_768_64_ced99f0e_layer3_head-1_mlp_out.pt
+2025-11-19 17:29:35,746 - INFO - Computing SVD for MLP layer 4 input
+2025-11-19 17:29:35,839 - INFO - Saved SVD for layer 4, head -1, mlp_in to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head-1_mlp_in.pt
+2025-11-19 17:29:35,839 - INFO - Computing SVD for MLP layer 4 output
+2025-11-19 17:29:35,927 - INFO - Saved SVD for layer 4, head -1, mlp_out to svd_cache/gpt2_12_12_768_64_ced99f0e_layer4_head-1_mlp_out.pt
+2025-11-19 17:29:35,927 - INFO - Computing SVD for MLP layer 5 input
+2025-11-19 17:29:36,022 - INFO - Saved SVD for layer 5, head -1, mlp_in to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head-1_mlp_in.pt
+2025-11-19 17:29:36,022 - INFO - Computing SVD for MLP layer 5 output
+2025-11-19 17:29:36,102 - INFO - Saved SVD for layer 5, head -1, mlp_out to svd_cache/gpt2_12_12_768_64_ced99f0e_layer5_head-1_mlp_out.pt
+2025-11-19 17:29:36,102 - INFO - Computing SVD for MLP layer 6 input
+2025-11-19 17:29:36,188 - INFO - Saved SVD for layer 6, head -1, mlp_in to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head-1_mlp_in.pt
+2025-11-19 17:29:36,188 - INFO - Computing SVD for MLP layer 6 output
+2025-11-19 17:29:36,267 - INFO - Saved SVD for layer 6, head -1, mlp_out to svd_cache/gpt2_12_12_768_64_ced99f0e_layer6_head-1_mlp_out.pt
+2025-11-19 17:29:36,267 - INFO - Computing SVD for MLP layer 7 input
+2025-11-19 17:29:36,353 - INFO - Saved SVD for layer 7, head -1, mlp_in to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head-1_mlp_in.pt
+2025-11-19 17:29:36,353 - INFO - Computing SVD for MLP layer 7 output
+2025-11-19 17:29:36,433 - INFO - Saved SVD for layer 7, head -1, mlp_out to svd_cache/gpt2_12_12_768_64_ced99f0e_layer7_head-1_mlp_out.pt
+2025-11-19 17:29:36,433 - INFO - Computing SVD for MLP layer 8 input
+2025-11-19 17:29:36,517 - INFO - Saved SVD for layer 8, head -1, mlp_in to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head-1_mlp_in.pt
+2025-11-19 17:29:36,518 - INFO - Computing SVD for MLP layer 8 output
+2025-11-19 17:29:36,597 - INFO - Saved SVD for layer 8, head -1, mlp_out to svd_cache/gpt2_12_12_768_64_ced99f0e_layer8_head-1_mlp_out.pt
+2025-11-19 17:29:36,597 - INFO - Computing SVD for MLP layer 9 input
+2025-11-19 17:29:36,682 - INFO - Saved SVD for layer 9, head -1, mlp_in to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head-1_mlp_in.pt
+2025-11-19 17:29:36,682 - INFO - Computing SVD for MLP layer 9 output
+2025-11-19 17:29:36,762 - INFO - Saved SVD for layer 9, head -1, mlp_out to svd_cache/gpt2_12_12_768_64_ced99f0e_layer9_head-1_mlp_out.pt
+2025-11-19 17:29:36,762 - INFO - Computing SVD for MLP layer 10 input
+2025-11-19 17:29:36,855 - INFO - Saved SVD for layer 10, head -1, mlp_in to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head-1_mlp_in.pt
+2025-11-19 17:29:36,856 - INFO - Computing SVD for MLP layer 10 output
+2025-11-19 17:29:36,943 - INFO - Saved SVD for layer 10, head -1, mlp_out to svd_cache/gpt2_12_12_768_64_ced99f0e_layer10_head-1_mlp_out.pt
+2025-11-19 17:29:36,943 - INFO - Computing SVD for MLP layer 11 input
+2025-11-19 17:29:37,037 - INFO - Saved SVD for layer 11, head -1, mlp_in to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head-1_mlp_in.pt
+2025-11-19 17:29:37,037 - INFO - Computing SVD for MLP layer 11 output
+2025-11-19 17:29:37,125 - INFO - Saved SVD for layer 11, head -1, mlp_out to svd_cache/gpt2_12_12_768_64_ced99f0e_layer11_head-1_mlp_out.pt
+2025-11-19 17:29:37,125 - INFO - SVD loading/computation complete.
+========================================================================================================================
+COMPREHENSIVE SIGMA AMPLIFICATION TEST
+========================================================================================================================
+
+Testing sigma amplification on ALL 4 experiments
+Sigma values to test: [1.0, 2.0, 5.0, 10.0, 15.0, 20.0]
+
+[1/3] Loading model and circuit...
+Loaded pretrained model gpt2-small into HookedTransformer
+Moving model to device:  cuda
+[2/3] Loading test data...
+[3/3] Computing baseline metrics...
+Computing baseline:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Computing baseline:  10%|█         | 1/10 [00:00<00:04,  2.17it/s]Computing baseline:  50%|█████     | 5/10 [00:00<00:00, 11.06it/s]Computing baseline: 100%|██████████| 10/10 [00:00<00:00, 20.41it/s]Computing baseline: 100%|██████████| 10/10 [00:00<00:00, 12.54it/s]
+
+Baseline Results:
+  HE:  Accuracy: 84.00%, Logit Diff: 2.5252
+  SHE: Accuracy: 70.51%, Logit Diff: 2.8397
+
+========================================================================================================================
+RUNNING SIGMA AMPLIFICATION EXPERIMENTS
+========================================================================================================================
+
+E.1: Swap ALL dirs (target: he)
+------------------------------------------------------------------------------------------------------------------------
+  σ ×   1.0... Range swap: he:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: he:  10%|█         | 1/10 [00:00<00:02,  3.92it/s]Range swap: he:  50%|█████     | 5/10 [00:00<00:00, 15.38it/s]Range swap: he:  90%|█████████ | 9/10 [00:00<00:00, 21.66it/s]Range swap: he: 100%|██████████| 10/10 [00:00<00:00, 14.98it/s]
+∆Logit:   -1.10 (Δ from baseline:   -3.62), Flip: 83.5%
+  σ ×   2.0... Range swap: he:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: he:  10%|█         | 1/10 [00:00<00:02,  4.29it/s]Range swap: he:  50%|█████     | 5/10 [00:00<00:00, 15.97it/s]Range swap: he:  90%|█████████ | 9/10 [00:00<00:00, 21.63it/s]Range swap: he: 100%|██████████| 10/10 [00:00<00:00, 15.50it/s]
+∆Logit:   -3.82 (Δ from baseline:   -6.34), Flip: 100.0%
+  σ ×   5.0... Range swap: he:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: he:  10%|█         | 1/10 [00:00<00:02,  3.86it/s]Range swap: he:  40%|████      | 4/10 [00:00<00:00, 12.80it/s]Range swap: he:  80%|████████  | 8/10 [00:00<00:00, 19.78it/s]Range swap: he: 100%|██████████| 10/10 [00:00<00:00, 14.52it/s]
+∆Logit:  -11.80 (Δ from baseline:  -14.32), Flip: 100.0%
+  σ ×  10.0... Range swap: he:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: he:  10%|█         | 1/10 [00:00<00:02,  3.96it/s]Range swap: he:  50%|█████     | 5/10 [00:00<00:00, 15.73it/s]Range swap: he:  90%|█████████ | 9/10 [00:00<00:00, 22.21it/s]Range swap: he: 100%|██████████| 10/10 [00:00<00:00, 15.86it/s]
+∆Logit:  -23.96 (Δ from baseline:  -26.49), Flip: 100.0%
+  σ ×  15.0... Range swap: he:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: he:  10%|█         | 1/10 [00:00<00:02,  4.11it/s]Range swap: he:  40%|████      | 4/10 [00:00<00:00, 13.27it/s]Range swap: he:  80%|████████  | 8/10 [00:00<00:00, 20.57it/s]Range swap: he: 100%|██████████| 10/10 [00:00<00:00, 15.75it/s]
+∆Logit:  -34.16 (Δ from baseline:  -36.68), Flip: 100.0%
+  σ ×  20.0... Range swap: he:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: he:  10%|█         | 1/10 [00:00<00:02,  4.31it/s]Range swap: he:  50%|█████     | 5/10 [00:00<00:00, 15.89it/s]Range swap: he:  80%|████████  | 8/10 [00:00<00:00, 20.17it/s]Range swap: he: 100%|██████████| 10/10 [00:00<00:00, 14.76it/s]
+∆Logit:  -42.31 (Δ from baseline:  -44.84), Flip: 100.0%
+
+E.2: Swap ALL dirs (target: she)
+------------------------------------------------------------------------------------------------------------------------
+  σ ×   1.0... Range swap: she:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: she:  10%|█         | 1/10 [00:00<00:02,  3.70it/s]Range swap: she:  50%|█████     | 5/10 [00:00<00:00, 14.76it/s]Range swap: she:  90%|█████████ | 9/10 [00:00<00:00, 21.07it/s]Range swap: she: 100%|██████████| 10/10 [00:00<00:00, 14.92it/s]
+∆Logit:   +1.01 (Δ from baseline:   -1.83), Flip: 4.7%
+  σ ×   2.0... Range swap: she:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: she:  10%|█         | 1/10 [00:00<00:02,  4.16it/s]Range swap: she:  50%|█████     | 5/10 [00:00<00:00, 16.27it/s]Range swap: she:  90%|█████████ | 9/10 [00:00<00:00, 23.08it/s]Range swap: she: 100%|██████████| 10/10 [00:00<00:00, 16.12it/s]
+∆Logit:   -1.73 (Δ from baseline:   -4.57), Flip: 67.0%
+  σ ×   5.0... Range swap: she:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: she:  10%|█         | 1/10 [00:00<00:02,  4.25it/s]Range swap: she:  40%|████      | 4/10 [00:00<00:00, 13.80it/s]Range swap: she:  80%|████████  | 8/10 [00:00<00:00, 21.27it/s]Range swap: she: 100%|██████████| 10/10 [00:00<00:00, 15.89it/s]
+∆Logit:   -9.87 (Δ from baseline:  -12.71), Flip: 133.3%
+  σ ×  10.0... Range swap: she:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: she:  10%|█         | 1/10 [00:00<00:02,  4.08it/s]Range swap: she:  50%|█████     | 5/10 [00:00<00:00, 15.85it/s]Range swap: she:  80%|████████  | 8/10 [00:00<00:00, 20.40it/s]Range swap: she: 100%|██████████| 10/10 [00:00<00:00, 14.87it/s]
+∆Logit:  -22.37 (Δ from baseline:  -25.21), Flip: 133.3%
+  σ ×  15.0... Range swap: she:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: she:  10%|█         | 1/10 [00:00<00:02,  4.04it/s]Range swap: she:  50%|█████     | 5/10 [00:00<00:00, 15.99it/s]Range swap: she:  90%|█████████ | 9/10 [00:00<00:00, 21.80it/s]Range swap: she: 100%|██████████| 10/10 [00:00<00:00, 15.29it/s]
+∆Logit:  -32.72 (Δ from baseline:  -35.56), Flip: 133.3%
+  σ ×  20.0... Range swap: she:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: she:  10%|█         | 1/10 [00:00<00:02,  3.96it/s]Range swap: she:  40%|████      | 4/10 [00:00<00:00, 13.19it/s]Range swap: she:  60%|██████    | 6/10 [00:00<00:00,  6.26it/s]Range swap: she: 100%|██████████| 10/10 [00:01<00:00, 11.23it/s]Range swap: she: 100%|██████████| 10/10 [00:01<00:00,  8.53it/s]
+∆Logit:  -40.82 (Δ from baseline:  -43.66), Flip: 133.3%
+
+E.3: Swap Masc. only (target: he)
+------------------------------------------------------------------------------------------------------------------------
+  σ ×   1.0... Range swap: he:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: he:  10%|█         | 1/10 [00:00<00:02,  3.60it/s]Range swap: he:  40%|████      | 4/10 [00:00<00:00, 12.08it/s]Range swap: he:  80%|████████  | 8/10 [00:00<00:00, 19.08it/s]Range swap: he: 100%|██████████| 10/10 [00:00<00:00, 13.73it/s]
+∆Logit:   +0.60 (Δ from baseline:   -1.93), Flip: 8.9%
+  σ ×   2.0... Range swap: he:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: he:  10%|█         | 1/10 [00:00<00:02,  4.02it/s]Range swap: he:  50%|█████     | 5/10 [00:00<00:00, 15.99it/s]Range swap: he:  90%|█████████ | 9/10 [00:00<00:00, 22.91it/s]Range swap: he: 100%|██████████| 10/10 [00:00<00:00, 16.17it/s]
+∆Logit:   -0.44 (Δ from baseline:   -2.96), Flip: 43.0%
+  σ ×   5.0... Range swap: he:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: he:  10%|█         | 1/10 [00:00<00:02,  4.02it/s]Range swap: he:  40%|████      | 4/10 [00:00<00:00, 12.49it/s]Range swap: he:  80%|████████  | 8/10 [00:00<00:00, 19.59it/s]Range swap: he: 100%|██████████| 10/10 [00:00<00:00, 14.81it/s]
+∆Logit:   -3.53 (Δ from baseline:   -6.05), Flip: 100.0%
+  σ ×  10.0... Range swap: he:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: he:  10%|█         | 1/10 [00:00<00:02,  3.90it/s]Range swap: he:  50%|█████     | 5/10 [00:00<00:00, 15.43it/s]Range swap: he:  90%|█████████ | 9/10 [00:00<00:00, 22.20it/s]Range swap: he: 100%|██████████| 10/10 [00:00<00:00, 15.66it/s]
+∆Logit:   -8.60 (Δ from baseline:  -11.13), Flip: 100.0%
+  σ ×  15.0... Range swap: he:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: he:  10%|█         | 1/10 [00:00<00:02,  3.92it/s]Range swap: he:  40%|████      | 4/10 [00:00<00:00, 13.19it/s]Range swap: he:  70%|███████   | 7/10 [00:00<00:00, 18.82it/s]Range swap: he: 100%|██████████| 10/10 [00:00<00:00, 14.93it/s]
+∆Logit:  -13.50 (Δ from baseline:  -16.02), Flip: 100.0%
+  σ ×  20.0... Range swap: he:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: he:  10%|█         | 1/10 [00:00<00:02,  4.21it/s]Range swap: he:  50%|█████     | 5/10 [00:00<00:00, 16.36it/s]Range swap: he:  90%|█████████ | 9/10 [00:00<00:00, 23.19it/s]Range swap: he: 100%|██████████| 10/10 [00:00<00:00, 16.17it/s]
+∆Logit:  -18.15 (Δ from baseline:  -20.67), Flip: 100.0%
+
+E.4: Swap Fem. only (target: she)
+------------------------------------------------------------------------------------------------------------------------
+  σ ×   1.0... Range swap: she:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: she:  10%|█         | 1/10 [00:00<00:02,  4.17it/s]Range swap: she:  50%|█████     | 5/10 [00:00<00:00, 16.44it/s]Range swap: she:  90%|█████████ | 9/10 [00:00<00:00, 23.34it/s]Range swap: she: 100%|██████████| 10/10 [00:00<00:00, 16.16it/s]
+∆Logit:   +2.05 (Δ from baseline:   -0.79), Flip: 2.8%
+  σ ×   2.0... Range swap: she:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: she:  10%|█         | 1/10 [00:00<00:02,  4.08it/s]Range swap: she:  50%|█████     | 5/10 [00:00<00:00, 16.00it/s]Range swap: she:  90%|█████████ | 9/10 [00:00<00:00, 21.79it/s]Range swap: she: 100%|██████████| 10/10 [00:00<00:00, 15.15it/s]
+∆Logit:   +0.35 (Δ from baseline:   -2.49), Flip: 12.3%
+  σ ×   5.0... Range swap: she:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: she:  10%|█         | 1/10 [00:00<00:02,  4.30it/s]Range swap: she:  40%|████      | 4/10 [00:00<00:00, 14.07it/s]Range swap: she:  80%|████████  | 8/10 [00:00<00:00, 21.55it/s]Range swap: she: 100%|██████████| 10/10 [00:00<00:00, 16.07it/s]
+∆Logit:   -4.75 (Δ from baseline:   -7.59), Flip: 115.7%
+  σ ×  10.0... Range swap: she:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: she:  10%|█         | 1/10 [00:00<00:02,  4.21it/s]Range swap: she:  50%|█████     | 5/10 [00:00<00:00, 16.34it/s]Range swap: she:  80%|████████  | 8/10 [00:00<00:00, 20.66it/s]Range swap: she: 100%|██████████| 10/10 [00:00<00:00, 15.63it/s]
+∆Logit:  -13.04 (Δ from baseline:  -15.88), Flip: 150.0%
+  σ ×  15.0... Range swap: she:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: she:  10%|█         | 1/10 [00:00<00:02,  4.22it/s]Range swap: she:  50%|█████     | 5/10 [00:00<00:00, 16.14it/s]Range swap: she:  90%|█████████ | 9/10 [00:00<00:00, 23.12it/s]Range swap: she: 100%|██████████| 10/10 [00:00<00:00, 15.61it/s]
+∆Logit:  -20.73 (Δ from baseline:  -23.57), Flip: 150.0%
+  σ ×  20.0... Range swap: she:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Range swap: she:  10%|█         | 1/10 [00:00<00:02,  3.97it/s]Range swap: she:  40%|████      | 4/10 [00:00<00:00, 13.21it/s]Range swap: she:  80%|████████  | 8/10 [00:00<00:00, 20.68it/s]Range swap: she: 100%|██████████| 10/10 [00:00<00:00, 15.27it/s]
+∆Logit:  -27.59 (Δ from baseline:  -30.43), Flip: 150.0%
+
+
+Detailed results saved to: /home/areeb/Circuit_Subspace/results/comprehensive_sigma_test/comprehensive_sigma_results.json
+
+========================================================================================================================
+COMPREHENSIVE RESULTS TABLE
+========================================================================================================================
+
+Experiment                σ      Prompt   n     Baseline ∆Logit      Interv. ∆Logit       ∆(∆Logit)    Acc%     Flip→she%    Flip→he%    
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+E.1: Swap ALL dirs        1.0    "he"     150    +2.53 ±  1.48      -1.10 ±  0.83       -3.62         2.7%     83.5%          0.0%
+E.1: Swap ALL dirs        2.0    "he"     150    +2.53 ±  1.48      -3.82 ±  0.63       -6.34         0.0%    100.0%          0.0%
+E.1: Swap ALL dirs        5.0    "he"     150    +2.53 ±  1.48     -11.80 ±  2.50      -14.32         0.0%    100.0%          0.0%
+E.1: Swap ALL dirs        10.0   "he"     150    +2.53 ±  1.48     -23.96 ±  5.52      -26.49         0.0%    100.0%          0.0%
+E.1: Swap ALL dirs        15.0   "he"     150    +2.53 ±  1.48     -34.16 ±  7.50      -36.68         0.0%    100.0%          0.0%
+E.1: Swap ALL dirs        20.0   "he"     150    +2.53 ±  1.48     -42.31 ±  8.57      -44.84         0.0%    100.0%          0.0%
+
+E.2: Swap ALL dirs        1.0    "she"    156    +2.84 ±  2.12      +1.01 ±  0.96       -1.83        40.4%      0.0%          4.7%
+E.2: Swap ALL dirs        2.0    "she"    156    +2.84 ±  2.12      -1.73 ±  0.61       -4.57         0.0%      0.0%         67.0%
+E.2: Swap ALL dirs        5.0    "she"    156    +2.84 ±  2.12      -9.87 ±  4.08      -12.71         1.3%     33.3%        100.0%
+E.2: Swap ALL dirs        10.0   "she"    156    +2.84 ±  2.12     -22.37 ±  9.31      -25.21         1.3%     33.3%        100.0%
+E.2: Swap ALL dirs        15.0   "she"    156    +2.84 ±  2.12     -32.72 ± 13.04      -35.56         1.3%     33.3%        100.0%
+E.2: Swap ALL dirs        20.0   "she"    156    +2.84 ±  2.12     -40.82 ± 15.44      -43.66         1.3%     33.3%        100.0%
+
+E.3: Swap Masc. only      1.0    "he"     150    +2.53 ±  1.48      +0.60 ±  1.22       -1.93        44.7%      8.9%          0.0%
+E.3: Swap Masc. only      2.0    "he"     150    +2.53 ±  1.48      -0.44 ±  0.97       -2.96        25.3%     43.0%          0.0%
+E.3: Swap Masc. only      5.0    "he"     150    +2.53 ±  1.48      -3.53 ±  0.63       -6.05         0.0%    100.0%          0.0%
+E.3: Swap Masc. only      10.0   "he"     150    +2.53 ±  1.48      -8.60 ±  1.69      -11.13         0.0%    100.0%          0.0%
+E.3: Swap Masc. only      15.0   "he"     150    +2.53 ±  1.48     -13.50 ±  2.98      -16.02         0.0%    100.0%          0.0%
+E.3: Swap Masc. only      20.0   "he"     150    +2.53 ±  1.48     -18.15 ±  4.15      -20.67         0.0%    100.0%          0.0%
+
+E.4: Swap Fem. only       1.0    "she"    156    +2.84 ±  2.12      +2.05 ±  1.39       -0.79        55.8%      0.0%          2.8%
+E.4: Swap Fem. only       2.0    "she"    156    +2.84 ±  2.12      +0.35 ±  0.73       -2.49        30.8%      0.0%         12.3%
+E.4: Swap Fem. only       5.0    "she"    156    +2.84 ±  2.12      -4.75 ±  1.92       -7.59         0.6%     16.7%         99.1%
+E.4: Swap Fem. only       10.0   "she"    156    +2.84 ±  2.12     -13.04 ±  5.59      -15.88         1.9%     50.0%        100.0%
+E.4: Swap Fem. only       15.0   "she"    156    +2.84 ±  2.12     -20.73 ±  8.82      -23.57         1.9%     50.0%        100.0%
+E.4: Swap Fem. only       20.0   "she"    156    +2.84 ±  2.12     -27.59 ± 11.44      -30.43         1.9%     50.0%        100.0%
+
+========================================================================================================================

@@ -64,3 +64,8 @@ Thumbs.db
 !checkpoints/
 !checkpoints/**/*.pt
 data/data_main/train_100k_ioi.csv
+
+# Checkpoints (too large for GitHub)
+checkpoints/
+*.pt
+*.pth

@@ -96,21 +96,7 @@ This performs "range-swap" interventions where activations along identified dire
 python experiments/evaluation/generate_sigma_table.py
 ```
 
-## Method Details
 
-### SVD Decomposition of OV Circuits
-
-For each attention head, we decompose the OV matrix as:
-
-```
-W_OV = U @ diag(S) @ V^T
-```
-
-Where:
-- `W_OV[0]` = `b_V @ W_O + b_O/n_heads` (effective bias)
-- `W_OV[1:]` = `W_V @ W_O`
-
-This augmented formulation allows the bias terms to be treated as part of the SVD.
 
 ### Learnable Masks
 

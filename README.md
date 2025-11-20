@@ -10,15 +10,7 @@ The core idea is to decompose each attention head's OV (Output-Value) and QK (Qu
 2. **Intervene on specific directions** - Swap activations along identified directions to flip model predictions
 3. **Achieve high interpretability** - Each direction has a clear mathematical interpretation
 
-### Key Results
 
-On the Gender Pronoun (GP) task, we identified **4 key singular value directions** that control gender prediction:
-- **L9.H7.SV1** (masculine direction)
-- **L11.H8.SV6** (masculine direction)
-- **L10.H9.SV0** (feminine direction)
-- **L11.H8.SV9** (feminine direction)
-
-Swapping activations along these directions achieves **100% prediction flip rate** from "he" to "she" and vice versa.
 
 ## Installation
 
